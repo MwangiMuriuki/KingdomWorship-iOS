@@ -1,0 +1,6 @@
+framework module Pods_Ksf_Worship {
+  umbrella header "Pods-Ksf Worship-umbrella.h"
+
+  export *
+  module * { export * }
+}

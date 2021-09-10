@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6A26EBB50D0044206C /* AppDelegate.swift */; };
+		71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6C26EBB50E0044206C /* SceneDelegate.swift */; };
+		71257D6F26EBB50E0044206C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6E26EBB50E0044206C /* ViewController.swift */; };
+		71257D7226EBB50E0044206C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7026EBB50E0044206C /* Main.storyboard */; };
+		71257D7426EBB5120044206C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7326EBB5120044206C /* Assets.xcassets */; };
+		71257D7726EBB5120044206C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7526EBB5120044206C /* LaunchScreen.storyboard */; };
+		71257D8226EBB7980044206C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71257D8126EBB7980044206C /* Colors.xcassets */; };
+		746B3E0ADC002BEED86342DF /* Pods_Ksf_Worship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71257D6726EBB50D0044206C /* Ksf Worship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ksf Worship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71257D6A26EBB50D0044206C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71257D6C26EBB50E0044206C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		71257D6E26EBB50E0044206C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71257D7126EBB50E0044206C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71257D7326EBB5120044206C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71257D7626EBB5120044206C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71257D7826EBB5120044206C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71257D8126EBB7980044206C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ksf_Worship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D421A986616712D7327027 /* Pods-Ksf Worship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ksf Worship.release.xcconfig"; path = "Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship.release.xcconfig"; sourceTree = "<group>"; };
+		BC26FE3621B0BA901A0FF27C /* Pods-Ksf Worship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ksf Worship.debug.xcconfig"; path = "Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71257D6426EBB50D0044206C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746B3E0ADC002BEED86342DF /* Pods_Ksf_Worship.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A3C4B7801313F18EFC0564 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC26FE3621B0BA901A0FF27C /* Pods-Ksf Worship.debug.xcconfig */,
+				B9D421A986616712D7327027 /* Pods-Ksf Worship.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		40446CBC34B0B37EA631AA92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71257D5E26EBB50D0044206C = {
+			isa = PBXGroup;
+			children = (
+				71257D6926EBB50D0044206C /* Ksf Worship */,
+				71257D6826EBB50D0044206C /* Products */,
+				12A3C4B7801313F18EFC0564 /* Pods */,
+				40446CBC34B0B37EA631AA92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		71257D6826EBB50D0044206C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71257D6726EBB50D0044206C /* Ksf Worship.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71257D6926EBB50D0044206C /* Ksf Worship */ = {
+			isa = PBXGroup;
+			children = (
+				71257D8026EBB5360044206C /* controller */,
+				71257D7F26EBB5300044206C /* view */,
+				71257D7E26EBB52A0044206C /* model */,
+				71257D6A26EBB50D0044206C /* AppDelegate.swift */,
+				71257D6C26EBB50E0044206C /* SceneDelegate.swift */,
+				71257D6E26EBB50E0044206C /* ViewController.swift */,
+				71257D7026EBB50E0044206C /* Main.storyboard */,
+				71257D7326EBB5120044206C /* Assets.xcassets */,
+				71257D7526EBB5120044206C /* LaunchScreen.storyboard */,
+				71257D7826EBB5120044206C /* Info.plist */,
+				71257D8126EBB7980044206C /* Colors.xcassets */,
+			);
+			path = "Ksf Worship";
+			sourceTree = "<group>";
+		};
+		71257D7E26EBB52A0044206C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		71257D7F26EBB5300044206C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		71257D8026EBB5360044206C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71257D6626EBB50D0044206C /* Ksf Worship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71257D7B26EBB5120044206C /* Build configuration list for PBXNativeTarget "Ksf Worship" */;
+			buildPhases = (
+				6F53B23F85DB2A54F6DFC6E1 /* [CP] Check Pods Manifest.lock */,
+				71257D6326EBB50D0044206C /* Sources */,
+				71257D6426EBB50D0044206C /* Frameworks */,
+				71257D6526EBB50D0044206C /* Resources */,
+				54ED203DEAEDB18D635F5374 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ksf Worship";
+			productName = "Ksf Worship";
+			productReference = 71257D6726EBB50D0044206C /* Ksf Worship.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71257D5F26EBB50D0044206C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					71257D6626EBB50D0044206C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 71257D6226EBB50D0044206C /* Build configuration list for PBXProject "Ksf Worship" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71257D5E26EBB50D0044206C;
+			productRefGroup = 71257D6826EBB50D0044206C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71257D6626EBB50D0044206C /* Ksf Worship */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71257D6526EBB50D0044206C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71257D7726EBB5120044206C /* LaunchScreen.storyboard in Resources */,
+				71257D8226EBB7980044206C /* Colors.xcassets in Resources */,
+				71257D7426EBB5120044206C /* Assets.xcassets in Resources */,
+				71257D7226EBB50E0044206C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54ED203DEAEDB18D635F5374 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F53B23F85DB2A54F6DFC6E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ksf Worship-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71257D6326EBB50D0044206C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71257D6F26EBB50E0044206C /* ViewController.swift in Sources */,
+				71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */,
+				71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		71257D7026EBB50E0044206C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71257D7126EBB50E0044206C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71257D7526EBB5120044206C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71257D7626EBB5120044206C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71257D7926EBB5120044206C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71257D7A26EBB5120044206C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71257D7C26EBB5120044206C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC26FE3621B0BA901A0FF27C /* Pods-Ksf Worship.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GTN5ANBL8;
+				INFOPLIST_FILE = "Ksf Worship/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernest.ios.Ksf-Worship";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71257D7D26EBB5120044206C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D421A986616712D7327027 /* Pods-Ksf Worship.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GTN5ANBL8;
+				INFOPLIST_FILE = "Ksf Worship/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernest.ios.Ksf-Worship";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71257D6226EBB50D0044206C /* Build configuration list for PBXProject "Ksf Worship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71257D7926EBB5120044206C /* Debug */,
+				71257D7A26EBB5120044206C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71257D7B26EBB5120044206C /* Build configuration list for PBXNativeTarget "Ksf Worship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71257D7C26EBB5120044206C /* Debug */,
+				71257D7D26EBB5120044206C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71257D5F26EBB50D0044206C /* Project object */;
+}
