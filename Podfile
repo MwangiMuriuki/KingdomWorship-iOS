@@ -7,5 +7,6 @@ target 'Ksf Worship' do
 
   # Pods for Ksf Worship
 pod 'Wormholy'
+pod 'SideMenu', '~> 6.0'
 
 end

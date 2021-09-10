@@ -1,16 +1,20 @@
 PODS:
+  - SideMenu (6.5.0)
   - Wormholy (1.6.4)
 
 DEPENDENCIES:
+  - SideMenu (~> 6.0)
   - Wormholy
 
 SPEC REPOS:
   trunk:
+    - SideMenu
     - Wormholy
 
 SPEC CHECKSUMS:
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   Wormholy: 2e70f64227e010d363f8d33268369f77faf12471
 
-PODFILE CHECKSUM: 8f6bc581af8c897f4ce9d2c289c9973124abf773
+PODFILE CHECKSUM: f679579f9f700fbd4101a490df573335379d0a7f
 
 COCOAPODS: 1.11.0
