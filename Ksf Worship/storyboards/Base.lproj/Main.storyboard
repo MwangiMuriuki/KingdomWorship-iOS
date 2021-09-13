@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--All SongsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ksf_Worship" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AllSongsVC" customModule="Ksf_Worship" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +30,9 @@
                                     <navigationItem title="All Songs" id="xA6-Dr-76Q">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu_icon" id="SdN-7k-xif">
                                             <color key="tintColor" name="colorWhite"/>
+                                            <connections>
+                                                <action selector="menuIconTapped:" destination="BYZ-38-t0r" id="bVP-bU-qlK"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

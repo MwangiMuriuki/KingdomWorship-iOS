@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6A26EBB50D0044206C /* AppDelegate.swift */; };
 		71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6C26EBB50E0044206C /* SceneDelegate.swift */; };
-		71257D6F26EBB50E0044206C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6E26EBB50E0044206C /* ViewController.swift */; };
+		71257D6F26EBB50E0044206C /* AllSongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6E26EBB50E0044206C /* AllSongsVC.swift */; };
 		71257D7226EBB50E0044206C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7026EBB50E0044206C /* Main.storyboard */; };
 		71257D7426EBB5120044206C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7326EBB5120044206C /* Assets.xcassets */; };
 		71257D7726EBB5120044206C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7526EBB5120044206C /* LaunchScreen.storyboard */; };
 		71257D8226EBB7980044206C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71257D8126EBB7980044206C /* Colors.xcassets */; };
+		7147068326EF32660085A19A /* SongListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068126EF32650085A19A /* SongListCustomCell.swift */; };
+		7147068426EF32660085A19A /* SongListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7147068226EF32650085A19A /* SongListCustomCell.xib */; };
+		7147068626EF32940085A19A /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068526EF32940085A19A /* SideMenuVC.swift */; };
+		7147068A26EF35060085A19A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068926EF35060085A19A /* Colors.swift */; };
 		746B3E0ADC002BEED86342DF /* Pods_Ksf_Worship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +25,16 @@
 		71257D6726EBB50D0044206C /* Ksf Worship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ksf Worship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71257D6A26EBB50D0044206C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71257D6C26EBB50E0044206C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71257D6E26EBB50E0044206C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71257D6E26EBB50E0044206C /* AllSongsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongsVC.swift; sourceTree = "<group>"; };
 		71257D7126EBB50E0044206C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71257D7326EBB5120044206C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71257D7626EBB5120044206C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71257D7826EBB5120044206C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71257D8126EBB7980044206C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		7147068126EF32650085A19A /* SongListCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListCustomCell.swift; sourceTree = "<group>"; };
+		7147068226EF32650085A19A /* SongListCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListCustomCell.xib; sourceTree = "<group>"; };
+		7147068526EF32940085A19A /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		7147068926EF35060085A19A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ksf_Worship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D421A986616712D7327027 /* Pods-Ksf Worship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ksf Worship.release.xcconfig"; path = "Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship.release.xcconfig"; sourceTree = "<group>"; };
 		BC26FE3621B0BA901A0FF27C /* Pods-Ksf Worship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ksf Worship.debug.xcconfig"; path = "Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,15 +90,14 @@
 		71257D6926EBB50D0044206C /* Ksf Worship */ = {
 			isa = PBXGroup;
 			children = (
+				7147068826EF34F30085A19A /* utils */,
+				7147068726EF32AF0085A19A /* storyboards */,
 				71257D8026EBB5360044206C /* controller */,
 				71257D7F26EBB5300044206C /* view */,
 				71257D7E26EBB52A0044206C /* model */,
 				71257D6A26EBB50D0044206C /* AppDelegate.swift */,
 				71257D6C26EBB50E0044206C /* SceneDelegate.swift */,
-				71257D6E26EBB50E0044206C /* ViewController.swift */,
-				71257D7026EBB50E0044206C /* Main.storyboard */,
 				71257D7326EBB5120044206C /* Assets.xcassets */,
-				71257D7526EBB5120044206C /* LaunchScreen.storyboard */,
 				71257D7826EBB5120044206C /* Info.plist */,
 				71257D8126EBB7980044206C /* Colors.xcassets */,
 			);
@@ -107,6 +114,7 @@
 		71257D7F26EBB5300044206C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7147068026EF322F0085A19A /* customViews */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -114,8 +122,36 @@
 		71257D8026EBB5360044206C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				71257D6E26EBB50E0044206C /* AllSongsVC.swift */,
+				7147068526EF32940085A19A /* SideMenuVC.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		7147068026EF322F0085A19A /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				7147068126EF32650085A19A /* SongListCustomCell.swift */,
+				7147068226EF32650085A19A /* SongListCustomCell.xib */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
+		7147068726EF32AF0085A19A /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				71257D7526EBB5120044206C /* LaunchScreen.storyboard */,
+				71257D7026EBB50E0044206C /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		7147068826EF34F30085A19A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7147068926EF35060085A19A /* Colors.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7147068426EF32660085A19A /* SongListCustomCell.xib in Resources */,
 				71257D7726EBB5120044206C /* LaunchScreen.storyboard in Resources */,
 				71257D8226EBB7980044206C /* Colors.xcassets in Resources */,
 				71257D7426EBB5120044206C /* Assets.xcassets in Resources */,
@@ -233,9 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71257D6F26EBB50E0044206C /* ViewController.swift in Sources */,
+				71257D6F26EBB50E0044206C /* AllSongsVC.swift in Sources */,
+				7147068A26EF35060085A19A /* Colors.swift in Sources */,
+				7147068326EF32660085A19A /* SongListCustomCell.swift in Sources */,
 				71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */,
 				71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */,
+				7147068626EF32940085A19A /* SideMenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
