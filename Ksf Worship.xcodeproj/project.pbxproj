@@ -18,6 +18,17 @@
 		7147068426EF32660085A19A /* SongListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7147068226EF32650085A19A /* SongListCustomCell.xib */; };
 		7147068626EF32940085A19A /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068526EF32940085A19A /* SideMenuVC.swift */; };
 		7147068A26EF35060085A19A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068926EF35060085A19A /* Colors.swift */; };
+		71B214CE26EF9FBD003C9746 /* Navcontroller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B214CD26EF9FBD003C9746 /* Navcontroller.storyboard */; };
+		71F3C64B26EF88BE00205C34 /* SideMenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3C64926EF88BE00205C34 /* SideMenuCustomCell.swift */; };
+		71F3C64C26EF88BE00205C34 /* SideMenuCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71F3C64A26EF88BE00205C34 /* SideMenuCustomCell.xib */; };
+		71F3C64E26EF914700205C34 /* AddSongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3C64D26EF914700205C34 /* AddSongVC.swift */; };
+		71F3C65026EF916800205C34 /* AddSong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3C64F26EF916800205C34 /* AddSong.storyboard */; };
+		71F3C65226EF91FA00205C34 /* TenziVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3C65126EF91FA00205C34 /* TenziVC.swift */; };
+		71F3C65426EF923B00205C34 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3C65326EF923B00205C34 /* AboutVC.swift */; };
+		71F3C65626EF929500205C34 /* FavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3C65526EF929500205C34 /* FavouritesVC.swift */; };
+		71F3C65826EF932F00205C34 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3C65726EF932F00205C34 /* ProfileVC.swift */; };
+		71F3C65A26EF934A00205C34 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3C65926EF934A00205C34 /* Profile.storyboard */; };
+		71F3C65C26EF97E400205C34 /* FavouritesVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3C65B26EF97E300205C34 /* FavouritesVC.storyboard */; };
 		746B3E0ADC002BEED86342DF /* Pods_Ksf_Worship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +46,17 @@
 		7147068226EF32650085A19A /* SongListCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListCustomCell.xib; sourceTree = "<group>"; };
 		7147068526EF32940085A19A /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		7147068926EF35060085A19A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		71B214CD26EF9FBD003C9746 /* Navcontroller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navcontroller.storyboard; sourceTree = "<group>"; };
+		71F3C64926EF88BE00205C34 /* SideMenuCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCustomCell.swift; sourceTree = "<group>"; };
+		71F3C64A26EF88BE00205C34 /* SideMenuCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCustomCell.xib; sourceTree = "<group>"; };
+		71F3C64D26EF914700205C34 /* AddSongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongVC.swift; sourceTree = "<group>"; };
+		71F3C64F26EF916800205C34 /* AddSong.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSong.storyboard; sourceTree = "<group>"; };
+		71F3C65126EF91FA00205C34 /* TenziVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenziVC.swift; sourceTree = "<group>"; };
+		71F3C65326EF923B00205C34 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		71F3C65526EF929500205C34 /* FavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesVC.swift; sourceTree = "<group>"; };
+		71F3C65726EF932F00205C34 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		71F3C65926EF934A00205C34 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		71F3C65B26EF97E300205C34 /* FavouritesVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavouritesVC.storyboard; sourceTree = "<group>"; };
 		A58B22A7D29827806B9B4ABE /* Pods_Ksf_Worship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ksf_Worship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D421A986616712D7327027 /* Pods-Ksf Worship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ksf Worship.release.xcconfig"; path = "Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship.release.xcconfig"; sourceTree = "<group>"; };
 		BC26FE3621B0BA901A0FF27C /* Pods-Ksf Worship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ksf Worship.debug.xcconfig"; path = "Target Support Files/Pods-Ksf Worship/Pods-Ksf Worship.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				7147068826EF34F30085A19A /* utils */,
-				7147068726EF32AF0085A19A /* storyboards */,
 				71257D8026EBB5360044206C /* controller */,
 				71257D7F26EBB5300044206C /* view */,
 				71257D7E26EBB52A0044206C /* model */,
@@ -114,6 +135,7 @@
 		71257D7F26EBB5300044206C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7147068726EF32AF0085A19A /* storyboards */,
 				7147068026EF322F0085A19A /* customViews */,
 			);
 			path = view;
@@ -124,6 +146,11 @@
 			children = (
 				71257D6E26EBB50E0044206C /* AllSongsVC.swift */,
 				7147068526EF32940085A19A /* SideMenuVC.swift */,
+				71F3C64D26EF914700205C34 /* AddSongVC.swift */,
+				71F3C65126EF91FA00205C34 /* TenziVC.swift */,
+				71F3C65326EF923B00205C34 /* AboutVC.swift */,
+				71F3C65526EF929500205C34 /* FavouritesVC.swift */,
+				71F3C65726EF932F00205C34 /* ProfileVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -133,6 +160,8 @@
 			children = (
 				7147068126EF32650085A19A /* SongListCustomCell.swift */,
 				7147068226EF32650085A19A /* SongListCustomCell.xib */,
+				71F3C64926EF88BE00205C34 /* SideMenuCustomCell.swift */,
+				71F3C64A26EF88BE00205C34 /* SideMenuCustomCell.xib */,
 			);
 			path = customViews;
 			sourceTree = "<group>";
@@ -142,6 +171,10 @@
 			children = (
 				71257D7526EBB5120044206C /* LaunchScreen.storyboard */,
 				71257D7026EBB50E0044206C /* Main.storyboard */,
+				71F3C64F26EF916800205C34 /* AddSong.storyboard */,
+				71F3C65926EF934A00205C34 /* Profile.storyboard */,
+				71F3C65B26EF97E300205C34 /* FavouritesVC.storyboard */,
+				71B214CD26EF9FBD003C9746 /* Navcontroller.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -215,7 +248,12 @@
 			files = (
 				7147068426EF32660085A19A /* SongListCustomCell.xib in Resources */,
 				71257D7726EBB5120044206C /* LaunchScreen.storyboard in Resources */,
+				71F3C65A26EF934A00205C34 /* Profile.storyboard in Resources */,
+				71F3C64C26EF88BE00205C34 /* SideMenuCustomCell.xib in Resources */,
 				71257D8226EBB7980044206C /* Colors.xcassets in Resources */,
+				71F3C65026EF916800205C34 /* AddSong.storyboard in Resources */,
+				71B214CE26EF9FBD003C9746 /* Navcontroller.storyboard in Resources */,
+				71F3C65C26EF97E400205C34 /* FavouritesVC.storyboard in Resources */,
 				71257D7426EBB5120044206C /* Assets.xcassets in Resources */,
 				71257D7226EBB50E0044206C /* Main.storyboard in Resources */,
 			);
@@ -270,12 +308,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F3C65826EF932F00205C34 /* ProfileVC.swift in Sources */,
 				71257D6F26EBB50E0044206C /* AllSongsVC.swift in Sources */,
 				7147068A26EF35060085A19A /* Colors.swift in Sources */,
 				7147068326EF32660085A19A /* SongListCustomCell.swift in Sources */,
+				71F3C64E26EF914700205C34 /* AddSongVC.swift in Sources */,
 				71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */,
 				71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */,
+				71F3C65426EF923B00205C34 /* AboutVC.swift in Sources */,
+				71F3C64B26EF88BE00205C34 /* SideMenuCustomCell.swift in Sources */,
 				7147068626EF32940085A19A /* SideMenuVC.swift in Sources */,
+				71F3C65226EF91FA00205C34 /* TenziVC.swift in Sources */,
+				71F3C65626EF929500205C34 /* FavouritesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

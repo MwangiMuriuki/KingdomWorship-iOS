@@ -69,8 +69,6 @@ class SideMenuVC: UIViewController {
         return v
     }()
     
-
-    
     lazy var logoutBtn: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -81,15 +79,25 @@ class SideMenuVC: UIViewController {
     }()
     
     var menuItems = ["All Songs", "Add Song", "My Favourites", "Tenzi za Rohoni", "My Profile", "About App"]
-    var menuIcons = [ UIImage.init(named: "dashboard_nav_icon"),
-                      UIImage.init(named: "profile_outline"),
-                      UIImage.init(named: "change_password_nav_icon"),
-                      UIImage.init(named: "logout_nav_icon") ]
+    var menuIcons = [ UIImage.init(named: "icon_all_songs"),
+                      UIImage.init(named: "icon_add_song"),
+                      UIImage.init(named: "icon_favourites"),
+                      UIImage.init(named: "icon_all_songs"),
+                      UIImage.init(named: "icon_profile"),
+                      UIImage.init(named: "icon_info"),]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = Colors.lightBlue
+        
+        let nib = UINib(nibName: "SideMenuCustomCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "SideMenuCustomCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         addSubViews()
         setConstraints()
         initViews()
@@ -158,15 +166,30 @@ class SideMenuVC: UIViewController {
 
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SideMenuVC: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuItems.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCustomCell", for: indexPath) as! SideMenuCustomCell
+        
+        cell.menuLabel.text = menuItems[indexPath.row]
+        cell.menuIcon.image = menuIcons[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        //Relay to delegate about menu item selection
 
+        let selectedItem = menuItems[indexPath.row]
+        delegate?.didSelectMenuItem(named: selectedItem)
+    }
+    
+    
 }

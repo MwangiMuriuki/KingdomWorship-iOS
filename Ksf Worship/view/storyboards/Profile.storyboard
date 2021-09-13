@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ProfileVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="Y6W-OH-hqX" customClass="ProfileVC" customModule="Ksf_Worship" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB3-BQ-41Y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1JN-y9-h79"/>
+                                </constraints>
+                                <color key="barTintColor" name="colorPrimaryDark"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="My Profile" id="xke-NR-Od9">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu_icon" id="BuX-LK-Yr7">
+                                            <color key="tintColor" name="colorWhite"/>
+                                            <connections>
+                                                <action selector="menuIconTapped:" destination="Y6W-OH-hqX" id="NXq-25-Tny"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-6M-c4X">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" name="colorWhite"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="colorPrimaryDark"/>
+                        <constraints>
+                            <constraint firstItem="FB3-BQ-41Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ES4-Tx-MAI"/>
+                            <constraint firstItem="VmA-6M-c4X" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="KvY-BW-Nu1"/>
+                            <constraint firstAttribute="bottom" secondItem="VmA-6M-c4X" secondAttribute="bottom" id="SRv-zu-wfP"/>
+                            <constraint firstItem="FB3-BQ-41Y" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gLB-b0-wl9"/>
+                            <constraint firstItem="VmA-6M-c4X" firstAttribute="top" secondItem="FB3-BQ-41Y" secondAttribute="bottom" id="gt7-g6-87i"/>
+                            <constraint firstItem="VmA-6M-c4X" firstAttribute="top" secondItem="FB3-BQ-41Y" secondAttribute="bottom" id="l5X-62-oIL"/>
+                            <constraint firstItem="FB3-BQ-41Y" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="wMU-zm-BuU"/>
+                            <constraint firstItem="VmA-6M-c4X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yV2-Kn-91O"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_icon" width="24" height="14"/>
+        <namedColor name="colorPrimaryDark">
+            <color red="0.18823529411764706" green="0.24705882352941178" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

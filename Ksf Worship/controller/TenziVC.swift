@@ -1,20 +1,20 @@
 //
-//  ViewController.swift
+//  TenziVC.swift
 //  Ksf Worship
 //
-//  Created by ERNEST MURIUKI on 10/09/2021.
+//  Created by ERNEST MURIUKI on 13/09/2021.
 //
 
 import UIKit
 import SideMenu
 
-class AllSongsVC: UIViewController {
+class TenziVC: UIViewController {
 
     var sideMenu: SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let menu = SideMenuVC()
         menu.delegate = self
         
@@ -28,22 +28,23 @@ class AllSongsVC: UIViewController {
         //Uncomment this to make the Menu swipe from the left
         //SideMenuManager.default.addPanGestureToPresent(toView: self.view)
     }
-
-
+    
     @IBAction func menuIconTapped(_ sender: Any) {
             present(sideMenu!, animated: true)
     }
+    
+
 }
 
-extension AllSongsVC: SideMenuDelegate{
+extension TenziVC: SideMenuDelegate{
     func didSelectMenuItem(named: String) {
         sideMenu?.dismiss(animated: true, completion: {
             if named == "All Songs"{
-//                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AllSongsVC") as! AllSongsVC
-//
-//                newViewController.modalPresentationStyle = .fullScreen
-//                self.present(newViewController, animated: true, completion: nil)
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AllSongsVC") as! AllSongsVC
+                
+                newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: true, completion: nil)
             }
             
             else if named == "Add Song"{
@@ -68,11 +69,11 @@ extension AllSongsVC: SideMenuDelegate{
             
             else if named == "Tenzi za Rohoni"{
                 
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "TenziVC") as! TenziVC
-                
-                newViewController.modalPresentationStyle = .fullScreen
-                self.present(newViewController, animated: true, completion: nil)
+//                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                let newViewController = storyBoard.instantiateViewController(withIdentifier: "TenziVC") as! TenziVC
+//                
+//                newViewController.modalPresentationStyle = .fullScreen
+//                self.present(newViewController, animated: true, completion: nil)
                 
             }
             
@@ -89,7 +90,7 @@ extension AllSongsVC: SideMenuDelegate{
             else if named == "About App"{
                 
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
                 
                 newViewController.modalPresentationStyle = .fullScreen
                 self.present(newViewController, animated: true, completion: nil)
@@ -99,5 +100,3 @@ extension AllSongsVC: SideMenuDelegate{
         
     }
 }
-
-

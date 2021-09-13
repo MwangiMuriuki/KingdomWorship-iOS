@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add SongVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddSongVC" id="Y6W-OH-hqX" customClass="AddSongVC" customModule="Ksf_Worship" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCS-Q4-ZlB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Xkz-1d-Weu"/>
+                                </constraints>
+                                <color key="barTintColor" name="colorPrimaryDark"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" name="colorWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Add Song" id="X22-re-1kh">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu_icon" id="ARz-OO-Ote">
+                                            <color key="tintColor" name="colorWhite"/>
+                                            <connections>
+                                                <action selector="menuIconTapped:" destination="Y6W-OH-hqX" id="wBX-Vi-P5f"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6Y-kn-2h5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" name="colorWhite"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="colorPrimaryDark"/>
+                        <constraints>
+                            <constraint firstItem="MCS-Q4-ZlB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="696-ht-dyG"/>
+                            <constraint firstItem="d6Y-kn-2h5" firstAttribute="top" secondItem="MCS-Q4-ZlB" secondAttribute="bottom" id="8O2-Su-cKU"/>
+                            <constraint firstAttribute="trailing" secondItem="d6Y-kn-2h5" secondAttribute="trailing" id="9So-iI-5om"/>
+                            <constraint firstItem="MCS-Q4-ZlB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="GN8-vM-ovD"/>
+                            <constraint firstItem="MCS-Q4-ZlB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IQ4-BW-DYi"/>
+                            <constraint firstAttribute="bottom" secondItem="d6Y-kn-2h5" secondAttribute="bottom" id="fYr-j9-Ec3"/>
+                            <constraint firstItem="d6Y-kn-2h5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="v07-lj-RIo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_icon" width="24" height="14"/>
+        <namedColor name="colorPrimaryDark">
+            <color red="0.18823529411764706" green="0.24705882352941178" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
