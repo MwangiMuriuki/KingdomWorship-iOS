@@ -163,7 +163,17 @@ class SideMenuVC: UIViewController {
         logoutBtn.widthAnchor.constraint(equalToConstant: 120).isActive = true
         logoutBtn.centerXAnchor.constraint(equalTo: self.footerView.centerXAnchor).isActive = true
         logoutBtn.centerYAnchor.constraint(equalTo: self.footerView.centerYAnchor).isActive = true
+        
+        logoutBtn.addTarget(self, action: #selector(logoutTapped), for: .touchUpInside)
 
+
+    }
+    
+    @objc func logoutTapped() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        newViewController.modalPresentationStyle = .fullScreen
+        self.present(newViewController, animated: true, completion: nil)
     }
     
 }

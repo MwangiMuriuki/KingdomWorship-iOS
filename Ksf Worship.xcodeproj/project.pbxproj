@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7112343B26FDF08500958DC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7112343A26FDF08500958DC5 /* GoogleService-Info.plist */; };
+		7117D8D926FDE50A0031309C /* SongModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117D8D826FDE5090031309C /* SongModelClass.swift */; };
 		71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6A26EBB50D0044206C /* AppDelegate.swift */; };
 		71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6C26EBB50E0044206C /* SceneDelegate.swift */; };
 		71257D6F26EBB50E0044206C /* AllSongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6E26EBB50E0044206C /* AllSongsVC.swift */; };
@@ -14,6 +16,7 @@
 		71257D7426EBB5120044206C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7326EBB5120044206C /* Assets.xcassets */; };
 		71257D7726EBB5120044206C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71257D7526EBB5120044206C /* LaunchScreen.storyboard */; };
 		71257D8226EBB7980044206C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71257D8126EBB7980044206C /* Colors.xcassets */; };
+		7146CEC52704D99D007FE744 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146CEC42704D99C007FE744 /* LoginVC.swift */; };
 		7147068326EF32660085A19A /* SongListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068126EF32650085A19A /* SongListCustomCell.swift */; };
 		7147068426EF32660085A19A /* SongListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7147068226EF32650085A19A /* SongListCustomCell.xib */; };
 		7147068626EF32940085A19A /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147068526EF32940085A19A /* SideMenuVC.swift */; };
@@ -33,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7112343A26FDF08500958DC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7117D8D826FDE5090031309C /* SongModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModelClass.swift; sourceTree = "<group>"; };
 		71257D6726EBB50D0044206C /* Ksf Worship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ksf Worship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71257D6A26EBB50D0044206C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71257D6C26EBB50E0044206C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		71257D7626EBB5120044206C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71257D7826EBB5120044206C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71257D8126EBB7980044206C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		7146CEC42704D99C007FE744 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7147068126EF32650085A19A /* SongListCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListCustomCell.swift; sourceTree = "<group>"; };
 		7147068226EF32650085A19A /* SongListCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListCustomCell.xib; sourceTree = "<group>"; };
 		7147068526EF32940085A19A /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 		71257D6926EBB50D0044206C /* Ksf Worship */ = {
 			isa = PBXGroup;
 			children = (
+				7112343A26FDF08500958DC5 /* GoogleService-Info.plist */,
 				7147068826EF34F30085A19A /* utils */,
 				71257D8026EBB5360044206C /* controller */,
 				71257D7F26EBB5300044206C /* view */,
@@ -128,6 +135,7 @@
 		71257D7E26EBB52A0044206C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				7117D8D826FDE5090031309C /* SongModelClass.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 				71F3C65326EF923B00205C34 /* AboutVC.swift */,
 				71F3C65526EF929500205C34 /* FavouritesVC.swift */,
 				71F3C65726EF932F00205C34 /* ProfileVC.swift */,
+				7146CEC42704D99C007FE744 /* LoginVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				71B214CE26EF9FBD003C9746 /* Navcontroller.storyboard in Resources */,
 				71F3C65C26EF97E400205C34 /* FavouritesVC.storyboard in Resources */,
 				71257D7426EBB5120044206C /* Assets.xcassets in Resources */,
+				7112343B26FDF08500958DC5 /* GoogleService-Info.plist in Resources */,
 				71257D7226EBB50E0044206C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F3C65826EF932F00205C34 /* ProfileVC.swift in Sources */,
+				7117D8D926FDE50A0031309C /* SongModelClass.swift in Sources */,
+				7146CEC52704D99D007FE744 /* LoginVC.swift in Sources */,
 				71257D6F26EBB50E0044206C /* AllSongsVC.swift in Sources */,
 				7147068A26EF35060085A19A /* Colors.swift in Sources */,
 				7147068326EF32660085A19A /* SongListCustomCell.swift in Sources */,
