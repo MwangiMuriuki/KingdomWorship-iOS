@@ -16,10 +16,8 @@ class AllSongsVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mainContentView: UIView!
     
-    
     let firebaseDB = Firestore.firestore()
    
-    
     let songs: [SongModelClass] = [
         SongModelClass(song_Title: "Song 1", song_Artist: "Artist 1", song_Lyrics: "Song Lyrics", time_Stamp: "xxxxxx", audio_Name: "xxxxxx", isFav: true),
         SongModelClass(song_Title: "Song 2", song_Artist: "Artist 2", song_Lyrics: "Song Lyrics", time_Stamp: "xxxxxx", audio_Name: "xxxxxx", isFav: false),
@@ -65,13 +63,17 @@ class AllSongsVC: UIViewController {
         firebaseDB.collection("Kingdom Music").order(by: "song_Title", descending: false).getDocuments() { (querySnapshot, error) in
             if let err = error {
                 print("DocError: \(err)")
+                
             } else {
                 if ((querySnapshot?.isEmpty) != nil){
                     print("DB is empty")
+                    
+                    self.collectionView.isHidden = true
                 }
                 else{
                     for document in querySnapshot!.documents {
                         print("FSongs: \(document.documentID) => \(document.data())")
+                        
                     }
                 }
             }
