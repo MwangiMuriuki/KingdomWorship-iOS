@@ -11,11 +11,19 @@ import SideMenu
 class AddSongVC: UIViewController {
     var sideMenu: SideMenuNavigationController?
     
+    @IBOutlet weak var songTitle: UITextField!
+    @IBOutlet weak var songArtist: UITextField!
+    @IBOutlet weak var songLyrics: UITextView!
+    @IBOutlet weak var audioFileLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let menu = SideMenuVC()
         menu.delegate = self
+        
+        initViews()
+        
         
         sideMenu = SideMenuNavigationController(rootViewController: menu)
         sideMenu?.setNavigationBarHidden(false, animated: false)
@@ -26,13 +34,38 @@ class AddSongVC: UIViewController {
         SideMenuManager.default.leftMenuNavigationController = sideMenu
         //Uncomment this to make the Menu swipe from the left
         //SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        
+        
+    }
+    
+    func initViews(){
+        songTitle.layer.cornerRadius = 10
+        songArtist.layer.cornerRadius = 10
+        songLyrics.layer.cornerRadius = 10
+        
+        songTitle.layer.borderColor = Colors.colorSilver?.cgColor
+        songArtist.layer.borderColor = Colors.colorSilver?.cgColor
+        songLyrics.layer.borderColor = Colors.colorSilver?.cgColor
+        
+        songTitle.layer.borderWidth = 0.7
+        songArtist.layer.borderWidth = 0.7
+        songLyrics.layer.borderWidth = 0.7
     }
     
     @IBAction func menuIconTapped(_ sender: Any) {
             present(sideMenu!, animated: true)
     }
     
-
+    @IBAction func selectSongTapped(_ sender: Any) {
+    }
+    
+    @IBAction func clearAllTapped(_ sender: Any) {
+    }
+    
+    @IBAction func addSongTapped(_ sender: Any) {
+    }
+    
+    
 }
 
 extension AddSongVC: SideMenuDelegate{

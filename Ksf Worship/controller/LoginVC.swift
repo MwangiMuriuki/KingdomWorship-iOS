@@ -19,14 +19,14 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
         formView.layer.cornerRadius = 20
         
-        emailField.layer.cornerRadius = 20
-        passwordField.layer.cornerRadius = 20
+        emailField.layer.cornerRadius = 10
+        passwordField.layer.cornerRadius = 10
         
-        emailField.layer.borderColor = Colors.textcolorTertiary?.cgColor
-        passwordField.layer.borderColor = Colors.textcolorTertiary?.cgColor
+        emailField.layer.borderColor = Colors.colorSilver?.cgColor
+        passwordField.layer.borderColor = Colors.colorSilver?.cgColor
         
-        emailField.layer.borderWidth = 1
-        passwordField.layer.borderWidth = 1
+        emailField.layer.borderWidth = 0.7
+        passwordField.layer.borderWidth = 0.7
         
     }
     

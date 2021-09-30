@@ -25,7 +25,7 @@ class SongListCustomCell: UICollectionViewCell {
         mainView.layer.borderWidth = 1
         mainView.layer.borderColor = Colors.colorPrimaryDark.cgColor
         
-        playIcon.layer.cornerRadius = 11
+        playIcon.layer.cornerRadius = 11.5
         
     }
     

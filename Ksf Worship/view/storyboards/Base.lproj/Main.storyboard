@@ -51,13 +51,13 @@
                                         <rect key="frame" x="20" y="360" width="374" height="240"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0j-Vz-h3a">
-                                                <rect key="frame" x="20" y="20" width="334" height="22"/>
+                                                <rect key="frame" x="8" y="20" width="358" height="22"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                                 <color key="textColor" name="textcolorPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5M-1l-99S">
-                                                <rect key="frame" x="20" y="50" width="334" height="40"/>
+                                                <rect key="frame" x="8" y="50" width="358" height="40"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="aQm-7x-alS"/>
@@ -65,15 +65,20 @@
                                                 <color key="textColor" name="textcolorSecondary"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" red="0.76867908240000005" green="0.76850134130000003" blue="0.77647215130000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFp-0z-n3o">
-                                                <rect key="frame" x="20" y="98" width="334" height="22"/>
+                                                <rect key="frame" x="8" y="98" width="358" height="22"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                                 <color key="textColor" name="textcolorPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Mg-gI-Tz2">
-                                                <rect key="frame" x="20" y="128" width="334" height="40"/>
+                                                <rect key="frame" x="8" y="128" width="358" height="40"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="oHm-V1-DvV"/>
@@ -81,20 +86,26 @@
                                                 <color key="textColor" name="textcolorSecondary"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" red="0.76867908240000005" green="0.76850134130000003" blue="0.77647215130000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uc-ns-lJ7">
-                                                <rect key="frame" x="214" y="188" width="140" height="34"/>
+                                                <rect key="frame" x="226" y="188" width="140" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="o1e-xI-iLW"/>
                                                     <constraint firstAttribute="height" constant="34" id="wy7-iX-x3K"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" titleAlignment="trailing">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Forgot Password?">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.20031788950000001" green="0.24748066069999999" blue="0.54120355840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <font key="NSFont" size="14" name="AvenirNext-Medium"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -105,20 +116,20 @@
                                         <constraints>
                                             <constraint firstItem="n0j-Vz-h3a" firstAttribute="top" secondItem="J2g-2S-vdy" secondAttribute="top" constant="20" symbolic="YES" id="4XY-dy-UG9"/>
                                             <constraint firstItem="7uc-ns-lJ7" firstAttribute="top" secondItem="2Mg-gI-Tz2" secondAttribute="bottom" constant="20" id="CGc-aS-TE2"/>
-                                            <constraint firstItem="f5M-1l-99S" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="20" symbolic="YES" id="CMm-8p-8v9"/>
-                                            <constraint firstAttribute="trailing" secondItem="7uc-ns-lJ7" secondAttribute="trailing" constant="20" symbolic="YES" id="F1y-9U-Ngo"/>
+                                            <constraint firstItem="f5M-1l-99S" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="8" id="CMm-8p-8v9"/>
+                                            <constraint firstAttribute="trailing" secondItem="7uc-ns-lJ7" secondAttribute="trailing" constant="8" id="F1y-9U-Ngo"/>
                                             <constraint firstItem="WFp-0z-n3o" firstAttribute="top" secondItem="f5M-1l-99S" secondAttribute="bottom" constant="8" symbolic="YES" id="HJR-GC-I0g"/>
-                                            <constraint firstItem="n0j-Vz-h3a" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="20" symbolic="YES" id="IQY-2d-BR5"/>
-                                            <constraint firstItem="2Mg-gI-Tz2" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="20" symbolic="YES" id="JFR-Nu-Xjy"/>
+                                            <constraint firstItem="n0j-Vz-h3a" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="8" id="IQY-2d-BR5"/>
+                                            <constraint firstItem="2Mg-gI-Tz2" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="8" id="JFR-Nu-Xjy"/>
                                             <constraint firstAttribute="height" constant="240" id="Jay-HV-UuT"/>
-                                            <constraint firstAttribute="trailing" secondItem="n0j-Vz-h3a" secondAttribute="trailing" constant="20" id="S6K-xe-0vz"/>
-                                            <constraint firstAttribute="trailing" secondItem="2Mg-gI-Tz2" secondAttribute="trailing" constant="20" symbolic="YES" id="gYv-x3-boq"/>
-                                            <constraint firstItem="WFp-0z-n3o" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="20" symbolic="YES" id="ldl-6r-W3H"/>
+                                            <constraint firstAttribute="trailing" secondItem="n0j-Vz-h3a" secondAttribute="trailing" constant="8" id="S6K-xe-0vz"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Mg-gI-Tz2" secondAttribute="trailing" constant="8" id="gYv-x3-boq"/>
+                                            <constraint firstItem="WFp-0z-n3o" firstAttribute="leading" secondItem="J2g-2S-vdy" secondAttribute="leading" constant="8" id="ldl-6r-W3H"/>
                                             <constraint firstItem="f5M-1l-99S" firstAttribute="top" secondItem="n0j-Vz-h3a" secondAttribute="bottom" constant="8" symbolic="YES" id="mGR-Mk-m0F"/>
                                             <constraint firstAttribute="bottom" secondItem="7uc-ns-lJ7" secondAttribute="bottom" constant="18" id="mZs-tF-heh"/>
-                                            <constraint firstAttribute="trailing" secondItem="WFp-0z-n3o" secondAttribute="trailing" constant="20" id="uvt-np-zN1"/>
+                                            <constraint firstAttribute="trailing" secondItem="WFp-0z-n3o" secondAttribute="trailing" constant="8" id="uvt-np-zN1"/>
                                             <constraint firstItem="2Mg-gI-Tz2" firstAttribute="top" secondItem="WFp-0z-n3o" secondAttribute="bottom" constant="8" symbolic="YES" id="wSr-5L-JMD"/>
-                                            <constraint firstAttribute="trailing" secondItem="f5M-1l-99S" secondAttribute="trailing" constant="20" symbolic="YES" id="y4z-2u-lxy"/>
+                                            <constraint firstAttribute="trailing" secondItem="f5M-1l-99S" secondAttribute="trailing" constant="8" id="y4z-2u-lxy"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgu-EQ-let">

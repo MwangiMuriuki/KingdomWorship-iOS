@@ -8,12 +8,14 @@
 import UIKit
 import SideMenu
 import FirebaseFirestore
+    
 
 class AllSongsVC: UIViewController {
 
     var sideMenu: SideMenuNavigationController?
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mainContentView: UIView!
+    
     
     let firebaseDB = Firestore.firestore()
    
@@ -45,9 +47,7 @@ class AllSongsVC: UIViewController {
         //SideMenuManager.default.addPanGestureToPresent(toView: self.view)
         
         initViews()
-        addData()
-        fetchData()
-       // fetchSongData()
+        fetchSongData()
         offlineModeSettings()
         
     }
@@ -60,61 +60,6 @@ class AllSongsVC: UIViewController {
         collectionView.register(UINib.init(nibName: "SongListCustomCell", bundle: nil), forCellWithReuseIdentifier: "SongListCustomCell")
     }
     
-    func addData(){
-        let citiesRef = firebaseDB.collection("cities")
-        
-        citiesRef.document("SF").setData([
-            "name": "San Francisco",
-            "state": "CA",
-            "country": "USA",
-            "capital": false,
-            "population": 860000,
-            "regions": ["west_coast", "norcal"]
-            ])
-        citiesRef.document("LA").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA",
-            "capital": false,
-            "population": 3900000,
-            "regions": ["west_coast", "socal"]
-            ])
-        citiesRef.document("DC").setData([
-            "name": "Washington D.C.",
-            "country": "USA",
-            "capital": true,
-            "population": 680000,
-            "regions": ["east_coast"]
-            ])
-        citiesRef.document("TOK").setData([
-            "name": "Tokyo",
-            "country": "Japan",
-            "capital": true,
-            "population": 9000000,
-            "regions": ["kanto", "honshu"]
-            ])
-        citiesRef.document("BJ").setData([
-            "name": "Beijing",
-            "country": "China",
-            "capital": true,
-            "population": 21500000,
-            "regions": ["jingjinji", "hebei"]
-            ])
-        
-    }
-    
-    func fetchData(){
-        let docRef = firebaseDB.collection("cities").document("SF")
-
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
-            } else {
-                print("Document does not exist")
-            }
-        }
-    }
     
     func fetchSongData(){
         firebaseDB.collection("Kingdom Music").order(by: "song_Title", descending: false).getDocuments() { (querySnapshot, error) in
@@ -122,7 +67,7 @@ class AllSongsVC: UIViewController {
                 print("DocError: \(err)")
             } else {
                 if ((querySnapshot?.isEmpty) != nil){
-                    print("Database is empty")
+                    print("DB is empty")
                 }
                 else{
                     for document in querySnapshot!.documents {
@@ -206,7 +151,6 @@ extension AllSongsVC: SideMenuDelegate{
                 
             }
         })
-        
     }
 }
 

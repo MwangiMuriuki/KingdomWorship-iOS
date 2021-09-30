@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,7 +39,178 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6Y-kn-2h5">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the song title below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8e-fV-jsA">
+                                        <rect key="frame" x="8" y="8" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" name="colorPrimaryDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the song lyrics below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtA-xr-6me">
+                                        <rect key="frame" x="8" y="161" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" name="colorPrimaryDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Name goes here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YN-yT-pie">
+                                        <rect key="frame" x="8" y="454" width="398" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8LP-8f-yEg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" name="textcolorSecondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a song from your device(OPTIONAL)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0j-rw-ISW">
+                                        <rect key="frame" x="8" y="377.5" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" name="colorPrimaryDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwl-zf-fY8">
+                                        <rect key="frame" x="8" y="36.5" width="398" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SLH-dX-J4e"/>
+                                        </constraints>
+                                        <color key="textColor" name="textcolorSecondary"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.76867908240000005" green="0.76850134130000003" blue="0.77647215130000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Artist" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXR-5r-q36">
+                                        <rect key="frame" x="8" y="113" width="398" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="N4x-qd-jGq"/>
+                                        </constraints>
+                                        <color key="textColor" name="textcolorSecondary"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.76867908240000005" green="0.76850134130000003" blue="0.77647215130000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qro-7q-2wo">
+                                        <rect key="frame" x="8" y="189.5" width="398" height="180"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="8Pp-db-2KN"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-UH-MTl">
+                                        <rect key="frame" x="8" y="492" width="398" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8Y-Cr-Fmc">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Clear All">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name="AvenirNext-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" name="colorWhite"/>
+                                                    <color key="baseBackgroundColor" name="colorPrimaryDark"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clearAllTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="A1z-x4-s1K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtt-QV-Ch8">
+                                                <rect key="frame" x="203" y="0.0" width="195" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Add Song">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name="AvenirNext-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" name="colorWhite"/>
+                                                    <color key="baseBackgroundColor" name="colorPrimaryDark"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addSongTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3R6-x3-Dbu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="JhE-IU-y1C"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRt-bX-Bbv">
+                                        <rect key="frame" x="8" y="406" width="398" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="L96-WL-aVk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Select Song">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="AvenirNext-Medium"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" name="colorWhite"/>
+                                            <color key="baseBackgroundColor" name="colorAccent"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectSongTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Clz-cc-1Gf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the song artist below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guH-nC-SM8">
+                                        <rect key="frame" x="8" y="84.5" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" name="colorPrimaryDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" name="colorWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NRt-bX-Bbv" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="2fL-T1-vOV"/>
+                                    <constraint firstAttribute="trailing" secondItem="guH-nC-SM8" secondAttribute="trailing" constant="8" id="8AG-n6-BqF"/>
+                                    <constraint firstItem="A8e-fV-jsA" firstAttribute="top" secondItem="d6Y-kn-2h5" secondAttribute="top" constant="8" id="9Rm-Me-m7F"/>
+                                    <constraint firstItem="w0J-UH-MTl" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="FXB-Ts-ftb"/>
+                                    <constraint firstItem="Fwl-zf-fY8" firstAttribute="top" secondItem="A8e-fV-jsA" secondAttribute="bottom" constant="8" id="Gr7-sL-YEg"/>
+                                    <constraint firstItem="VXR-5r-q36" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="PHz-Gf-maI"/>
+                                    <constraint firstAttribute="trailing" secondItem="NRt-bX-Bbv" secondAttribute="trailing" constant="8" id="PKu-KU-04U"/>
+                                    <constraint firstItem="6YN-yT-pie" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="QG1-d3-kpv"/>
+                                    <constraint firstAttribute="trailing" secondItem="qro-7q-2wo" secondAttribute="trailing" constant="8" id="TbK-kJ-vCK"/>
+                                    <constraint firstItem="guH-nC-SM8" firstAttribute="top" secondItem="Fwl-zf-fY8" secondAttribute="bottom" constant="8" id="XiM-PP-iss"/>
+                                    <constraint firstAttribute="trailing" secondItem="VXR-5r-q36" secondAttribute="trailing" constant="8" id="XkK-47-SZJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6YN-yT-pie" secondAttribute="trailing" constant="8" id="aIj-0C-nJN"/>
+                                    <constraint firstItem="w0J-UH-MTl" firstAttribute="top" secondItem="6YN-yT-pie" secondAttribute="bottom" constant="8" symbolic="YES" id="evv-ve-rpy"/>
+                                    <constraint firstAttribute="trailing" secondItem="CtA-xr-6me" secondAttribute="trailing" constant="8" id="g9d-Ip-IlU"/>
+                                    <constraint firstItem="Fwl-zf-fY8" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="gUk-OG-3ok"/>
+                                    <constraint firstItem="VXR-5r-q36" firstAttribute="top" secondItem="guH-nC-SM8" secondAttribute="bottom" constant="8" id="goA-jP-OB7"/>
+                                    <constraint firstItem="NRt-bX-Bbv" firstAttribute="top" secondItem="M0j-rw-ISW" secondAttribute="bottom" constant="8" id="h0t-dj-F3N"/>
+                                    <constraint firstItem="M0j-rw-ISW" firstAttribute="top" secondItem="qro-7q-2wo" secondAttribute="bottom" constant="8" id="hay-Go-6HM"/>
+                                    <constraint firstItem="6YN-yT-pie" firstAttribute="top" secondItem="NRt-bX-Bbv" secondAttribute="bottom" constant="8" symbolic="YES" id="jpB-HI-DSH"/>
+                                    <constraint firstItem="Fwl-zf-fY8" firstAttribute="top" secondItem="A8e-fV-jsA" secondAttribute="bottom" constant="8" id="kJU-vU-Ova"/>
+                                    <constraint firstAttribute="trailing" secondItem="A8e-fV-jsA" secondAttribute="trailing" constant="8" id="kMY-f2-UFE"/>
+                                    <constraint firstItem="M0j-rw-ISW" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="kS7-yP-ocf"/>
+                                    <constraint firstItem="CtA-xr-6me" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="lGa-wi-i0o"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fwl-zf-fY8" secondAttribute="trailing" constant="8" id="lfN-h8-okA"/>
+                                    <constraint firstAttribute="trailing" secondItem="M0j-rw-ISW" secondAttribute="trailing" constant="8" id="lh1-eZ-YNQ"/>
+                                    <constraint firstItem="A8e-fV-jsA" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="qtd-Sa-OP1"/>
+                                    <constraint firstItem="guH-nC-SM8" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="sCU-DV-EhD"/>
+                                    <constraint firstItem="CtA-xr-6me" firstAttribute="top" secondItem="VXR-5r-q36" secondAttribute="bottom" constant="8" id="sZc-N3-ze5"/>
+                                    <constraint firstItem="qro-7q-2wo" firstAttribute="leading" secondItem="d6Y-kn-2h5" secondAttribute="leading" constant="8" id="toX-MO-MpT"/>
+                                    <constraint firstItem="qro-7q-2wo" firstAttribute="top" secondItem="CtA-xr-6me" secondAttribute="bottom" constant="8" id="ve0-Tf-1Ie"/>
+                                    <constraint firstAttribute="trailing" secondItem="w0J-UH-MTl" secondAttribute="trailing" constant="8" id="vh9-3u-NFN"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -53,6 +225,12 @@
                             <constraint firstItem="d6Y-kn-2h5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="v07-lj-RIo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="audioFileLabel" destination="6YN-yT-pie" id="HyI-p6-Tbd"/>
+                        <outlet property="songArtist" destination="VXR-5r-q36" id="KIo-mj-dBh"/>
+                        <outlet property="songLyrics" destination="qro-7q-2wo" id="AdC-Fr-dK4"/>
+                        <outlet property="songTitle" destination="Fwl-zf-fY8" id="esn-DN-nJz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,11 +239,17 @@
     </scenes>
     <resources>
         <image name="menu_icon" width="24" height="14"/>
+        <namedColor name="colorAccent">
+            <color red="1" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="colorPrimaryDark">
             <color red="0.18823529411764706" green="0.24705882352941178" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="colorWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textcolorSecondary">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
