@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7112343B26FDF08500958DC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7112343A26FDF08500958DC5 /* GoogleService-Info.plist */; };
 		7117D8D926FDE50A0031309C /* SongModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117D8D826FDE5090031309C /* SongModelClass.swift */; };
+		7119F06B270AE9A00057AE70 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F06A270AE9A00057AE70 /* RegisterVC.swift */; };
+		7119F06D270AE9B80057AE70 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F06C270AE9B80057AE70 /* ResetPasswordVC.swift */; };
 		71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6A26EBB50D0044206C /* AppDelegate.swift */; };
 		71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6C26EBB50E0044206C /* SceneDelegate.swift */; };
 		71257D6F26EBB50E0044206C /* AllSongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71257D6E26EBB50E0044206C /* AllSongsVC.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		7112343A26FDF08500958DC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7117D8D826FDE5090031309C /* SongModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModelClass.swift; sourceTree = "<group>"; };
+		7119F06A270AE9A00057AE70 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		7119F06C270AE9B80057AE70 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		71257D6726EBB50D0044206C /* Ksf Worship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ksf Worship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71257D6A26EBB50D0044206C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71257D6C26EBB50E0044206C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				71F3C65526EF929500205C34 /* FavouritesVC.swift */,
 				71F3C65726EF932F00205C34 /* ProfileVC.swift */,
 				7146CEC42704D99C007FE744 /* LoginVC.swift */,
+				7119F06A270AE9A00057AE70 /* RegisterVC.swift */,
+				7119F06C270AE9B80057AE70 /* ResetPasswordVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -327,11 +333,13 @@
 				71F3C64E26EF914700205C34 /* AddSongVC.swift in Sources */,
 				71257D6B26EBB50D0044206C /* AppDelegate.swift in Sources */,
 				71257D6D26EBB50E0044206C /* SceneDelegate.swift in Sources */,
+				7119F06B270AE9A00057AE70 /* RegisterVC.swift in Sources */,
 				71F3C65426EF923B00205C34 /* AboutVC.swift in Sources */,
 				71F3C64B26EF88BE00205C34 /* SideMenuCustomCell.swift in Sources */,
 				7147068626EF32940085A19A /* SideMenuVC.swift in Sources */,
 				71F3C65226EF91FA00205C34 /* TenziVC.swift in Sources */,
 				71F3C65626EF929500205C34 /* FavouritesVC.swift in Sources */,
+				7119F06D270AE9B80057AE70 /* ResetPasswordVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

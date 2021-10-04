@@ -25,7 +25,7 @@ class SideMenuVC: UIViewController {
         
     lazy var profileImageView : UIImageView = {
         let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "splash_logo")
+        iv.image = #imageLiteral(resourceName: "avatar")
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.clipsToBounds = true
         iv.contentMode = .scaleAspectFill

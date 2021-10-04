@@ -49,6 +49,11 @@ class LoginVC: UIViewController {
     
     
     @IBAction func registerTapped(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterVC
+        
+        newViewController.modalPresentationStyle = .fullScreen
+        self.present(newViewController, animated: true, completion: nil)
     }
     
     /*
